@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "mergeSameTitle": true,
+  "maxUrlsPerChannel": 8,
+  "hideGroups": [
+    "购物频道",
+    "购物"
+  ],
+  "providers": [
+    {
+      "name": "官方主源",
+      "type": "app",
+      "url": "http://ds.fengcaizb.com/channels/dszb3.gz",
+      "official": true,
+      "enabled": true,
+      "gzip": true
+    },
+    {
+      "name": "内置频道快照",
+      "type": "asset",
+      "path": "diy_snapshot.gz",
+      "official": true,
+      "fallback": true,
+      "enabled": true,
+      "gzip": true
+    },
+    {
+      "name": "我的频道M3U",
+      "type": "file",
+      "path": "我的频道.m3u",
+      "enabled": true
+    },
+    {
+      "name": "我的频道TXT",
+      "type": "file",
+      "path": "我的频道.txt",
+      "enabled": true
+    }
+  ]
+}
